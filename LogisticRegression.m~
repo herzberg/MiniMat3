@@ -18,12 +18,8 @@ basisSp = @(x) 0;
 basisUn = @(x) 0;
 
 for ii = 1:length(data)
-    
-    class1 = data(ii).x(data(ii).y == 0,:);
-    class2 = data(ii).x(data(ii).y == 1,:);
-    figure; hold on;
-    plot(basis(class1(:,1)),basis(class1(:,2)),'ob');
-    plot(basis(class2(:,1)),basis(class2(:,2)),'or');
-    hold off;
+    figure;
+    class1 = data(ii).x(
+    plot(basis(data(ii).x(:,1)),basis(data(ii).x(:,2)),'.b');
     title(datanames{ii});
 end
